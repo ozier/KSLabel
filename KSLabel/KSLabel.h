@@ -30,6 +30,9 @@
 //	2) or crediting me inside the app's credits page 
 //	3) or a tweet mentioning @modogo
 
+//  Outline width modification by Artur Ozierański
+//  Copyright (c) 2013 Holdapp. All rights reserved.
+
 #import <UIKit/UIKit.h>
 
 @interface KSLabel : UILabel {
@@ -38,7 +41,9 @@
 
 @property BOOL drawOutline;
 @property (strong, nonatomic) UIColor *outlineColor;
+@property (assign, nonatomic) CGFloat outlineWidth;
 
 @property BOOL drawGradient;
 -(void) setGradientColors: (CGFloat [8]) colors;
+
 @end

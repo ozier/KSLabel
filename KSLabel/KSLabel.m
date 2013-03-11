@@ -39,6 +39,7 @@
 	
 	if (self) {
 		self.backgroundColor = [UIColor clearColor];
+        _outlineWidth = 2;
 	}
     
     return self;
@@ -98,7 +99,7 @@
 		alphaMask = CGBitmapContextCreateImage(context);
 		
 		// Outline width
-		CGContextSetLineWidth(context, 4);
+		CGContextSetLineWidth(context, self.outlineWidth);
 		CGContextSetLineJoin(context, kCGLineJoinRound);
 		
 		// Set the drawing method to stroke
